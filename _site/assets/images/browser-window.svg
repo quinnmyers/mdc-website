@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="858px" height="929px" viewBox="0 0 858 929" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Browser Window Medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="850" height="921" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Portrait" transform="translate(-51.000000, -373.000000)">
+            <g id="Browser-Window-Medium" filter="url(#filter-1)" transform="translate(55.000000, 375.000000)">
+                <g id="window-copy-2">
+                    <g id="Rectangle-Copy">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="#F9F9F8" xlink:href="#path-2"></use>
+                        <g id="Group-3" mask="url(#mask-3)">
+                            <g id="Group-2">
+                                <rect id="Rectangle-Copy" fill="#EDF1F5" x="0" y="0" width="850" height="47"></rect>
+                                <rect id="Rectangle" fill="#F8F9FB" x="85" y="9" width="726" height="30" rx="2"></rect>
+                            </g>
+                            <g id="Group" transform="translate(10.000000, 15.000000)">
+                                <circle id="Oval" fill="#FF6057" cx="7.5" cy="7.5" r="7.5"></circle>
+                                <circle id="Oval-Copy" fill="#FFC12E" cx="29.5" cy="7.5" r="7.5"></circle>
+                                <circle id="Oval-Copy-2" fill="#28CA40" cx="53.5" cy="7.5" r="7.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

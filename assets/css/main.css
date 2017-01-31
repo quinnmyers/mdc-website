@@ -367,8 +367,16 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 28pt;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto; }
+
 .main-wrapper {
-  height: 100vh;
+  height: 2000px;
   width: 100vw;
   background: pink; }
 
@@ -430,3 +438,161 @@ section.jumbotron .jumbotron-container {
     width: 100%;
     height: 1px;
     background: #292F36; }
+
+.services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .services .services-container {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 70vw;
+    width: 90%;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: -150px; }
+    .services .services-container .browser-window {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      height: 100%;
+      width: 100%;
+      border-radius: 4px;
+      background: #F8F8F7;
+      box-shadow: 2px 2px 3px #888888; }
+      .services .services-container .browser-window .browser-top-bar {
+        display: -ms-flexbox;
+        display: flex;
+        height: 8%;
+        width: 100%;
+        background: #dde1e4;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px; }
+        .services .services-container .browser-window .browser-top-bar .browser-buttons {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 100%;
+          width: 10%;
+          border-top-left-radius: 4px; }
+          .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-1, .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-2, .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-3 {
+            padding-top: 18%;
+            width: 18%;
+            background: red;
+            border-radius: 100%; }
+          .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-1 {
+            background: #FF5348; }
+          .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-2 {
+            background: #FFBA04; }
+          .services .services-container .browser-window .browser-top-bar .browser-buttons .browser-btn-3 {
+            background: #16C52E; }
+        .services .services-container .browser-window .browser-top-bar .search-bar {
+          width: 85%;
+          background: #F7F8FB;
+          height: 70%;
+          -ms-flex-item-align: center;
+              align-self: center;
+          margin-left: 1%;
+          border-radius: 3px; }
+    .services .services-container .services-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      position: absolute;
+      margin: 0px auto;
+      top: 0;
+      margin-top: 75px;
+      background: lightskyblue;
+      width: 90%;
+      height: calc(90% - 5vh); }
+      .services .services-container .services-content .services-grid {
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 1vh;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 90%;
+        background: orange; }
+        .services .services-container .services-content .services-grid .services-row-1, .services .services-container .services-content .services-grid .services-row-2 {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          height: 50%;
+          width: 100%;
+          background: pink;
+          margin-bottom: 5px; }
+          .services .services-container .services-content .services-grid .services-row-1 .service-container, .services .services-container .services-content .services-grid .services-row-2 .service-container {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            height: 100%;
+            width: 40%;
+            background: red; }
+            .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+              height: 25%;
+              width: 100%;
+              background: purple; }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container h4, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container h4 {
+                font-size: 2vw;
+                -ms-flex-item-align: center;
+                    align-self: center;
+                letter-spacing: .5px;
+                font-weight: 500;
+                margin-left: 3%;
+                font-family: "Rubik", sans-serif; }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-1, .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-2, .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-3, .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-4, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-1, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-2, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-3, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-4 {
+                display: -ms-flexbox;
+                display: flex;
+                height: 100%;
+                width: 25%;
+                background: yellow;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center; }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-1, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-1 {
+                background-image: url(/assets/images/web-dev-icon.svg); }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-2, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-2 {
+                background-image: url(/assets/images/design-icon.svg); }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-3, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-3 {
+                background-image: url(/assets/images/loudspeaker-icon.svg); }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container .icon-4, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container .icon-4 {
+                background-image: url(/assets/images/dropped-pin-icon.svg); }
+            .services .services-container .services-content .services-grid .services-row-1 .service-container .service-desc, .services .services-container .services-content .services-grid .services-row-2 .service-container .service-desc {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+              .services .services-container .services-content .services-grid .services-row-1 .service-container .service-desc p, .services .services-container .services-content .services-grid .services-row-2 .service-container .service-desc p {
+                font-family: "Gentium", serif;
+                line-height: 2vw;
+                width: 95%;
+                font-size: 1.4vw; }
+      .services .services-container .services-content .services-bottom-text {
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 3vw;
+        color: red;
+        font-size: 1.6vw;
+        width: 80%;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        line-height: 4vw;
+        color: #292F36;
+        padding-bottom: 2vw; }
