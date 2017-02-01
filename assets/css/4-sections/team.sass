@@ -1,0 +1,86 @@
+.team
+  display: flex
+  flex-direction: column
+  background: khaki
+  height: 750px
+  .team-container
+    display: flex
+    justify-content: space-between
+    height: 80%
+    background: lightskyblue
+    margin-top: 20px
+
+    .person-container
+      width: 25%
+      height: 100%
+      background: orange
+      .person-bio
+        margin-top: 15px
+        h4
+          font-family: $mainfont
+          letter-spacing: .5pt
+          text-align: center
+        h5
+          font-family: $mainfont
+          font-weight: 400
+          font-size: 10pt
+          margin-top: 3px
+          margin-bottom: 15px
+          text-align: center
+        p
+          margin: 0
+          font-family: $accentfont
+          font-size: 11pt
+
+      .avatar-1, .avatar-2, .avatar-3
+        width: 100%
+        height: 50%
+        max-height: 220px
+        background: purple
+          repeat: no-repeat
+          size: contain
+          position: center
+      .avatar-1
+        background:
+          image: url(/assets/images/cole-avatar.svg)
+      .avatar-2
+        background:
+          image: url(/assets/images/cole-avatar.svg)
+      .avatar-3
+        background:
+          image: url(/assets/images/cole-avatar.svg)
+
+      .social-container
+        display: flex
+        margin-top: 15px
+        align-items: center
+        justify-content: space-around
+        height: 40px
+        width: 100%
+        background: red
+        .insta-icon, .twitter-icon, .email-icon, .linkedin-icon, .github-icon, .snapchat-icon
+          height: 30px
+          width: 30px
+          background:
+            repeat: no-repeat
+            position: center
+            size: contain
+
+        .twitter-icon
+          background:
+            image: url(/assets/images/social-icons/twitter-icon.svg)
+        .insta-icon
+          background:
+            image: url(/assets/images/social-icons/insta-icon.svg)
+        .email-icon
+          background:
+            image: url(/assets/images/social-icons/email-icon.svg)
+        .linkedin-icon
+          background:
+            image: url(/assets/images/social-icons/linkedin-icon.svg)
+        .github-icon
+          background:
+            image: url(/assets/images/social-icons/github-icon.svg)
+        .snapchat-icon
+          background:
+            image: url(/assets/images/social-icons/snapchat-icon.svg)

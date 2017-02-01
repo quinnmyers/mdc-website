@@ -376,9 +376,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .main-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   height: 2000px;
   width: 100vw;
   background: pink; }
+  .main-wrapper .content-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 960px;
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 section.jumbotron .jumbotron-container {
   display: -ms-flexbox;
@@ -443,7 +455,9 @@ section.jumbotron .jumbotron-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  height: 58vw;
+  max-height: 650px; }
   .services .services-container {
     display: -ms-flexbox;
     display: flex;
@@ -451,10 +465,12 @@ section.jumbotron .jumbotron-container {
     -ms-flex-pack: center;
         justify-content: center;
     height: 70vw;
+    max-height: 750px;
     width: 90%;
     border-radius: 4px;
     margin: auto;
-    margin-top: -150px; }
+    margin-top: -150px;
+    max-width: 960px; }
     .services .services-container .browser-window {
       display: -ms-flexbox;
       display: flex;
@@ -540,7 +556,8 @@ section.jumbotron .jumbotron-container {
                 flex-direction: column;
             height: 100%;
             width: 40%;
-            background: red; }
+            background: red;
+            max-width: 345px; }
             .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container {
               display: -ms-flexbox;
               display: flex;
@@ -550,7 +567,7 @@ section.jumbotron .jumbotron-container {
               width: 100%;
               background: purple; }
               .services .services-container .services-content .services-grid .services-row-1 .service-container .title-container h4, .services .services-container .services-content .services-grid .services-row-2 .service-container .title-container h4 {
-                font-size: 2vw;
+                font-size: 16pt;
                 -ms-flex-item-align: center;
                     align-self: center;
                 letter-spacing: .5px;
@@ -580,19 +597,98 @@ section.jumbotron .jumbotron-container {
               -ms-flex-pack: center;
                   justify-content: center; }
               .services .services-container .services-content .services-grid .services-row-1 .service-container .service-desc p, .services .services-container .services-content .services-grid .services-row-2 .service-container .service-desc p {
-                font-family: "Gentium", serif;
-                line-height: 2vw;
+                font-family: "Gentium Basic", serif;
                 width: 95%;
-                font-size: 1.4vw; }
+                font-size: 11pt; }
       .services .services-container .services-content .services-bottom-text {
         -ms-flex-item-align: center;
             align-self: center;
         height: 3vw;
         color: red;
-        font-size: 1.6vw;
+        font-size: 14pt;
         width: 80%;
         text-align: center;
         font-family: "Rubik", sans-serif;
         line-height: 4vw;
         color: #292F36;
         padding-bottom: 2vw; }
+
+.team {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: khaki;
+  height: 750px; }
+  .team .team-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 80%;
+    background: lightskyblue;
+    margin-top: 20px; }
+    .team .team-container .person-container {
+      width: 25%;
+      height: 100%;
+      background: orange; }
+      .team .team-container .person-container .person-bio {
+        margin-top: 15px; }
+        .team .team-container .person-container .person-bio h4 {
+          font-family: "Rubik", sans-serif;
+          letter-spacing: .5pt;
+          text-align: center; }
+        .team .team-container .person-container .person-bio h5 {
+          font-family: "Rubik", sans-serif;
+          font-weight: 400;
+          font-size: 10pt;
+          margin-top: 3px;
+          margin-bottom: 15px;
+          text-align: center; }
+        .team .team-container .person-container .person-bio p {
+          margin: 0;
+          font-family: "Gentium Basic", serif;
+          font-size: 11pt; }
+      .team .team-container .person-container .avatar-1, .team .team-container .person-container .avatar-2, .team .team-container .person-container .avatar-3 {
+        width: 100%;
+        height: 50%;
+        max-height: 220px;
+        background: purple;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center; }
+      .team .team-container .person-container .avatar-1 {
+        background-image: url(/assets/images/cole-avatar.svg); }
+      .team .team-container .person-container .avatar-2 {
+        background-image: url(/assets/images/cole-avatar.svg); }
+      .team .team-container .person-container .avatar-3 {
+        background-image: url(/assets/images/cole-avatar.svg); }
+      .team .team-container .person-container .social-container {
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 15px;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 40px;
+        width: 100%;
+        background: red; }
+        .team .team-container .person-container .social-container .insta-icon, .team .team-container .person-container .social-container .twitter-icon, .team .team-container .person-container .social-container .email-icon, .team .team-container .person-container .social-container .linkedin-icon, .team .team-container .person-container .social-container .github-icon, .team .team-container .person-container .social-container .snapchat-icon {
+          height: 30px;
+          width: 30px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+        .team .team-container .person-container .social-container .twitter-icon {
+          background-image: url(/assets/images/social-icons/twitter-icon.svg); }
+        .team .team-container .person-container .social-container .insta-icon {
+          background-image: url(/assets/images/social-icons/insta-icon.svg); }
+        .team .team-container .person-container .social-container .email-icon {
+          background-image: url(/assets/images/social-icons/email-icon.svg); }
+        .team .team-container .person-container .social-container .linkedin-icon {
+          background-image: url(/assets/images/social-icons/linkedin-icon.svg); }
+        .team .team-container .person-container .social-container .github-icon {
+          background-image: url(/assets/images/social-icons/github-icon.svg); }
+        .team .team-container .person-container .social-container .snapchat-icon {
+          background-image: url(/assets/images/social-icons/snapchat-icon.svg); }

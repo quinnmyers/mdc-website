@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>email-icon_Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="66.67%" y1="16.67%" x2="41.67%" y2="75%" id="linearGradient-1">
+            <stop stop-color="#37AEE2" offset="0%"></stop>
+            <stop stop-color="#1E96C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="61.2346759%" y1="43.69%" x2="74.7064382%" y2="80.24%" id="linearGradient-2">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Portrait" transform="translate(-118.000000, -1967.000000)">
+            <g id="Group-5" transform="translate(45.000000, 1428.000000)">
+                <g id="person-1" transform="translate(0.000000, 7.000000)">
+                    <g id="Group-4" transform="translate(10.000000, 532.000000)">
+                        <g id="email-icon" transform="translate(63.030508, 0.000000)">
+                            <circle id="Oval" fill="url(#linearGradient-1)" cx="12.5" cy="12.5" r="12.5"></circle>
+                            <path d="M10.2083333,18.2291667 C9.803375,18.2291667 9.8721875,18.0762604 9.73252083,17.6906771 L8.54166667,13.7714479 L17.7083333,8.33333333" id="Shape" fill="#C8DAEA"></path>
+                            <path d="M10.2083333,18.2291667 C10.5208333,18.2291667 10.6589063,18.08625 10.8333333,17.9166667 L12.5,16.2960417 L10.4210417,15.0423958" id="Shape" fill="#A9C9DD"></path>
+                            <path d="M10.4208333,15.0427083 L15.4583333,18.7644792 C16.0331771,19.0816563 16.4480625,18.9174375 16.59125,18.2307813 L18.6417708,8.56796875 C18.8517083,7.72628125 18.3209271,7.34453125 17.771,7.59419792 L5.730375,12.2370104 C4.90848958,12.5666667 4.91328125,13.0251979 5.5805625,13.2295104 L8.67045833,14.1939167 L15.8238958,9.68089583 C16.1615938,9.47611458 16.4715313,9.58620938 16.2171458,9.81197917" id="Shape" fill="url(#linearGradient-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
