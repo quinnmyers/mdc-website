@@ -1,0 +1,86 @@
+    .portfolio {
+        padding: 50px 0;
+        background: white;
+        @include clearfix;
+        h2 {
+            display: block;
+            margin: 0 auto;
+            font-family: "Rubik", sans-serif;
+            font-size: 30pt;
+            line-height: 40pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 80%;
+            text-align: center;
+            @include phone {
+                font-size: 20pt
+            }
+        }
+        img {
+            width: auto;
+        }
+        &__slider {
+            margin: 0 auto;
+            &--item {
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    h3 {
+                        opacity: 0;
+                        transition: opacity .2s ease-out;
+                        color: #666;
+                        margin-top: 40px;
+                        line-height: 20pt;
+                        font-size: 14pt;
+                        font-weight: lighter;
+
+                        @include phone {
+                            opacity: 1;
+                        }
+                    }
+                    img {
+                        border-radius: 5px;
+                    }
+                    &:hover {
+                        h3 {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .owl-carousel {
+        .owl-loaded {
+            @include clearfix;
+        }
+        .owl-nav {
+            .owl-prev {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                font-size: 30pt;
+                line-height: 100pt;
+            }
+            .owl-next {
+                @extend .owl-prev;
+                left: auto;
+                right: 0;
+            }
+        }
+        .owl-stage-outer {
+            top: 0;
+            left: 0;
+            width: 100%;
+            .owl-item img {
+                                        box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }

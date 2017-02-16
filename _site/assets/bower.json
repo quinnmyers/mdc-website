@@ -1,0 +1,21 @@
+{
+  "name": "assets",
+  "homepage": "https://github.com/lsorese/mdc-website",
+  "authors": [
+    "Logan Sorese"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery2": "^2.0.0",
+    "owl.carousel": "^2.2.0"
+  }
+}

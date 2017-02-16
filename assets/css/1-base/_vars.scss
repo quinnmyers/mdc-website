@@ -1,0 +1,50 @@
+$gunmetal: #292F36;
+$main-accent: #F2BF00;
+
+
+$mainfont: "Rubik", sans-serif;
+$accentfont: "Gentium Basic", serif;
+
+
+$phone-width: 768px;
+$tablet-width: 1024px;
+$desktop-width: 1280px;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: inherit;
+    margin: 0;
+    line-height: 100%;
+    font-size: 16px;
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

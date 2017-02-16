@@ -1,0 +1,158 @@
+.services {
+    h2 {
+        display: block;
+        margin: 0 auto;
+        font-family: "Rubik", sans-serif;
+        font-size: 30pt;
+        line-height: 40pt;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 80%;
+        @include phone {
+            font-size: 20pt
+        }
+    }
+    p {
+        @extend h2;
+        font-size: 11pt;
+        margin-bottom: 10px;
+        max-width: 90%;
+        font-weight: lighter;
+        line-height: 16pt;
+    }
+    .services-container {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        border-radius: 4px;
+        margin: auto;
+        margin-top: -150px;
+        @include tablet {
+            margin-top: -160px;
+        }
+        position: relative;
+        max-width: 960px;
+        .browser-window {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            background: #F8F8F7;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+            .browser-top-bar {
+                display: flex;
+                height: 50px;
+                width: 100%;
+                background: #dde1e4;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                .browser-buttons {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 0 0 0 10px;
+                    @include tablet {
+                        margin: 0 10px;
+                    }
+                    .browser-btn-1,
+                    .browser-btn-2,
+                    .browser-btn-3 {
+                        width: 14px;
+                        height: 14px;
+                        margin: 0 4px;
+                        background: red;
+                        border-radius: 50%;
+                    }
+                    .browser-btn-1 {
+                        background: #FF5348;
+                    }
+                    .browser-btn-2 {
+                        background: #FFBA04;
+                    }
+                    .browser-btn-3 {
+                        background: #16C52E;
+                    }
+                }
+                .search-bar {
+                    flex: 1 0 auto;
+                    margin-right: 1%;
+                    background: #F7F8FB;
+                    height: 70%;
+                    align-self: center;
+                    margin-left: 1%;
+                    border-radius: 3px;
+                    @include phone {
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services-content {
+    padding-bottom: 2%;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    .service-container {
+        flex: 1 0 50%;
+        position: relative;
+        @include phone {
+            flex: 1 0 100%;
+        }
+        .title-container {
+            overflow: hidden;
+            .icon {
+                width: 30pt;
+                height: 40pt;
+                float: left;
+                background-position: left center;
+                background-size: 60% auto;
+                background-repeat: no-repeat;
+                &.webdev {
+                    background-image: url('../images/icon-webdev.svg');
+                }
+                &.design {
+                    background-image: url('../images/icon-design.svg');
+                }
+                &.seo {
+                    background-image: url('../images/icon-seo.svg');
+                }
+                &.branding {
+                    background-image: url('../images/icon-branding.svg');
+                }
+            }
+        }
+        .service-container-inside {
+            margin: 10% 5% 0 10%;
+            @include phone {
+                margin: 5% 5% 0 5%;
+            }
+            h4 {
+                font-size: 16pt;
+                line-height: 40pt;
+                margin-left: 30pt;
+                font-weight: lighter;
+            }
+            p {
+                max-width: 100%;
+                font-weight: lighter;
+                line-height: 16pt;
+            }
+        }
+        &:nth-child(even) {
+            .service-container-inside {
+                margin: 10% 10% 0 5%;
+                @include phone {
+                    margin: 5% 5% 0 5%;
+                }
+            }
+        }
+    }
+}
