@@ -1,6 +1,6 @@
     .portfolio {
         padding: 50px 0;
-        background: white;
+        background: blue;
         @include clearfix;
         h2 {
             display: block;
@@ -51,7 +51,7 @@
             }
         }
     }
-    
+
     .owl-carousel {
         .owl-loaded {
             @include clearfix;
