@@ -2,17 +2,17 @@ section.contact
   .contact-container
     h1.section-title Contact Us
     .contact-cta
-      p Please don't hesistate to reach out. We look forward to the speaking with you and hope we have the opportunity to work together. <br>
+      p Please don't hesistate to reach out. We look forward to the speaking with you and look forward to helping you with your project. <br>
       p Don't worry, someone will answer -- quickly.
     .contact-form-container
       .contact-form
         form(action='https://formspree.io/your@email.com', method='POST')
 
-        input.line-input(id='name', type='text', name='name', placeholder ="Your Name")
+        input.line-input(id='name', type='text', name='name', placeholder ="Your Name", onfocus="this.placeholder = ''", onblur="this.placeholder = 'Your Name'")
 
-        input.line-input(id='email',type='email', name='_replyto', placeholder='Your Email')
+        input.line-input(id='email',type='email', name='_replyto', placeholder='Your Email', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Your Email'")
 
-        input.line-input(id='services',type='text', name='services', placeholder='What Kind of Services Do You Need?')
+        input.line-input(id='services',type='text', name='services', placeholder='What Kind of Services Do You Need?', onfocus="this.placeholder = ''", onblur="this.placeholder = 'What Kind of Services Do You Need?'")
 
         label.message-label(for='name') Message
         textarea.message(id='message',type='textarea' ,align="top", resize='false', name='_message')
