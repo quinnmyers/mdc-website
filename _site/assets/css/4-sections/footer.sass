@@ -1,8 +1,64 @@
 .footer
-  display: block
   .footer-container
-    display: inline-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     width: 100%
-    height: 300px
+    height: 200px
     background: $gunmetal
     .footer-content-container
+      display: flex
+      justify-content: space-between
+      background: $gunmetal
+      height: 100%
+      width: 905px
+      .footer-left
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-left: 5px
+        h1
+          font-size: 30pt
+          line-height: 40pt
+          font-weight: bold
+          color: white
+          font-family: "Rubik", sans-serif
+          letter-spacing: 1px
+          @include phone
+            font-size: 20pt
+        h4
+          font-size: 13pt
+          font-weight: normal
+          color: white
+          font-family: "Rubik", sans-serif
+          @include phone
+            font-size: 11pt
+      .footer-right
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        list-style: none
+        margin-right: 5px
+        color: white
+        font-family: "Rubik", sans-serif
+        font-size: 12pt
+        justify-content: space-around
+        ul
+          li
+            padding: 5px 0px
+            @include phone
+              font-size: 9pt
+    .footer-mid
+      font-family: "Rubik", sans-serif
+      color: grey
+      @include phone
+        p
+          font-size: 9pt
+
+
+@media(max-width: 960px)
+  .footer
+    .footer-container
+      .footer-content-container
+        width: 100% !important
