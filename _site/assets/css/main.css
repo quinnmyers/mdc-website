@@ -385,6 +385,9 @@ h1, h2, p, .services p, h3, h4, h5, h6 {
   font-weight: 500;
   text-align: center;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 20pt; } }
 
 .main-wrapper {
   display: -ms-flexbox;
@@ -485,9 +488,10 @@ section.jumbotron .jumbotron-container {
       text-align: center; }
       @media (max-width: 768px) {
         section.jumbotron .jumbotron-container .jumbotron-cta h2, section.jumbotron .jumbotron-container .jumbotron-cta p {
+          margin: -20px auto 0 auto;
           display: block;
           line-height: 17pt;
-          font-size: 12pt;
+          font-size: 14pt;
           text-align: center; } }
     section.jumbotron .jumbotron-container .jumbotron-cta h5 {
       margin-top: 15px;
@@ -782,7 +786,10 @@ section.jumbotron .jumbotron-container {
   -ms-flex-direction: column;
       flex-direction: column;
   background: khaki;
-  height: 750px; }
+  height: 710px;
+  margin-top: 40px; }
+  .team .section-title {
+    margin-bottom: 20px; }
   .team .team-container {
     display: -ms-flexbox;
     display: flex;
@@ -856,8 +863,29 @@ section.jumbotron .jumbotron-container {
         .team .team-container .person-container .social-container .snapchat-icon {
           background-image: url(/assets/images/social-icons/snapchat-icon.svg); }
 
+@media (max-width: 960px) {
+  .person-bio p {
+    font-size: 10pt !important;
+    line-height: 20px; }
+  .person-container {
+    width: 30% !important; } }
+
+@media (max-width: 760px) {
+  .avatar-1, .avatar-2, .avatar-3 {
+    height: 200px !important; }
+  .team {
+    height: auto !important; }
+  .team-container {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    -ms-flex-align: center !important;
+        align-items: center !important; }
+  .person-container {
+    width: 80% !important;
+    margin-bottom: 50px !important; } }
+
 .contact {
-  margin-top: 50px; }
+  margin-top: 20px; }
   .contact .contact-container {
     display: -ms-flexbox;
     display: flex;
@@ -927,6 +955,8 @@ section.jumbotron .jumbotron-container {
           margin-bottom: 5px;
           color: #959495;
           font-weight: 400; }
+        .contact .contact-container .contact-form-container .contact-form input {
+          background: #F8F8F7; }
         .contact .contact-container .contact-form-container .contact-form input:focus {
           outline: none; }
       .contact .contact-container .contact-form-container #message {

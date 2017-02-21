@@ -2,7 +2,10 @@
   display: flex
   flex-direction: column
   background: khaki
-  height: 750px
+  height: 710px
+  margin-top: 40px
+  .section-title
+    margin-bottom: 20px
   .team-container
     display: flex
     justify-content: space-between
@@ -84,3 +87,24 @@
         .snapchat-icon
           background:
             image: url(/assets/images/social-icons/snapchat-icon.svg)
+
+
+
+@media(max-width: 960px)
+  .person-bio
+    p
+      font-size: 10pt !important
+      line-height: 20px
+  .person-container
+    width: 30% !important
+
+@media(max-width: 760px)
+  .avatar-1,.avatar-2, .avatar-3
+    height: 200px !important
+  .team
+    height: auto !important
+  .team-container
+    flex-direction: column !important
+    align-items: center !important
+  .person-container
+    width: 80% !important
