@@ -461,8 +461,10 @@ section.jumbotron .jumbotron-container {
       list-style: none;
       margin: 0;
       margin-right: 10px; }
-      section.jumbotron .jumbotron-container .nav-container .desktop-nav .desktop-nav-item, section.jumbotron .jumbotron-container .nav-container .desktop-nav li, section.jumbotron .jumbotron-container .nav-container ul .desktop-nav-item, section.jumbotron .jumbotron-container .nav-container ul li {
+      section.jumbotron .jumbotron-container .nav-container .desktop-nav .desktop-nav-item, section.jumbotron .jumbotron-container .nav-container .desktop-nav li, section.jumbotron .jumbotron-container .nav-container .desktop-nav a, section.jumbotron .jumbotron-container .nav-container .desktop-nav a:visited, section.jumbotron .jumbotron-container .nav-container ul .desktop-nav-item, section.jumbotron .jumbotron-container .nav-container ul li, section.jumbotron .jumbotron-container .nav-container ul a, section.jumbotron .jumbotron-container .nav-container ul a:visited {
         display: inline;
+        color: white;
+        text-decoration: none;
         padding: 0px 10px;
         font-family: "Rubik", sans-serif;
         font-size: 10pt;
@@ -521,7 +523,9 @@ section.jumbotron .jumbotron-container {
       margin-right: 20px;
       background: #292F36;
       z-index: 10; }
-      section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav .mobile-nav-item, section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav li, section.jumbotron .jumbotron-container .mobile-nav-container ul .mobile-nav-item, section.jumbotron .jumbotron-container .mobile-nav-container ul li {
+      section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav .mobile-nav-item, section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav li, section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav a, section.jumbotron .jumbotron-container .mobile-nav-container .mobile-nav a:visited, section.jumbotron .jumbotron-container .mobile-nav-container ul .mobile-nav-item, section.jumbotron .jumbotron-container .mobile-nav-container ul li, section.jumbotron .jumbotron-container .mobile-nav-container ul a, section.jumbotron .jumbotron-container .mobile-nav-container ul a:visited {
+        color: white;
+        text-decoration: none;
         padding: 5px 0px;
         font-family: "Rubik", sans-serif;
         color: white;
@@ -785,7 +789,6 @@ section.jumbotron .jumbotron-container {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  background: khaki;
   height: 710px;
   margin-top: 40px; }
   .team .section-title {
@@ -796,12 +799,10 @@ section.jumbotron .jumbotron-container {
     -ms-flex-pack: justify;
         justify-content: space-between;
     height: 80%;
-    background: lightskyblue;
     margin-top: 20px; }
     .team .team-container .person-container {
       width: 25%;
-      height: 100%;
-      background: orange; }
+      height: 100%; }
       .team .team-container .person-container .person-bio {
         margin-top: 15px; }
         .team .team-container .person-container .person-bio h4 {
@@ -823,14 +824,13 @@ section.jumbotron .jumbotron-container {
         width: 100%;
         height: 50%;
         max-height: 220px;
-        background: purple;
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center; }
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; }
       .team .team-container .person-container .avatar-1 {
-        background-image: url(/assets/images/cole-avatar.svg); }
+        background-image: url(/assets/images/quinn-avatar.svg); }
       .team .team-container .person-container .avatar-2 {
-        background-image: url(/assets/images/cole-avatar.svg); }
+        background-image: url(/assets/images/logan-avatar.svg); }
       .team .team-container .person-container .avatar-3 {
         background-image: url(/assets/images/cole-avatar.svg); }
       .team .team-container .person-container .social-container {
@@ -842,8 +842,7 @@ section.jumbotron .jumbotron-container {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         height: 40px;
-        width: 100%;
-        background: red; }
+        width: 100%; }
         .team .team-container .person-container .social-container .insta-icon, .team .team-container .person-container .social-container .twitter-icon, .team .team-container .person-container .social-container .email-icon, .team .team-container .person-container .social-container .linkedin-icon, .team .team-container .person-container .social-container .github-icon, .team .team-container .person-container .social-container .snapchat-icon {
           height: 30px;
           width: 30px;
@@ -1031,10 +1030,12 @@ section.jumbotron .jumbotron-container {
       font-size: 12pt;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
-      .footer .footer-container .footer-content-container .footer-right ul li {
+      .footer .footer-container .footer-content-container .footer-right ul li, .footer .footer-container .footer-content-container .footer-right ul a, .footer .footer-container .footer-content-container .footer-right ul a:visited {
+        color: white;
+        text-decoration: none;
         padding: 5px 0px; }
         @media (max-width: 768px) {
-          .footer .footer-container .footer-content-container .footer-right ul li {
+          .footer .footer-container .footer-content-container .footer-right ul li, .footer .footer-container .footer-content-container .footer-right ul a, .footer .footer-container .footer-content-container .footer-right ul a:visited {
             font-size: 9pt; } }
   .footer .footer-container .footer-mid {
     font-family: "Rubik", sans-serif;

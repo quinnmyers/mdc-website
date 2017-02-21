@@ -1,4 +1,4 @@
-section.jumbotron
+section.jumbotron#jumbotron
   .jumbotron-container
     .nav-container
       .logo
@@ -9,16 +9,17 @@ section.jumbotron
         .line-2
         .line-3
       ul.desktop-nav
-        li.desktop-nav-item SERVICES
-        li.desktop-nav-item PORTFOLIO
-        li.desktop-nav-item PEOPLE
-        li.desktop-nav-item CONTACT
+        li.desktop-nav-item: a(href="#services") SERVICES
+
+        //li.desktop-nav-item PORTFOLIO
+        li.desktop-nav-item: a(href="#team") PEOPLE
+        li.desktop-nav-item: a(href="#contact") CONTACT
     .mobile-nav-container
       ul.mobile-nav
-        li.mobile-nav-item SERVICES
-        li.mobile-nav-item PEOPLE
-        li.mobile-nav-item PORTFOLIO
-        li.mobile-nav-item CONTACT
+        li.mobile-nav-item: a(href="#services") SERVICES
+        li.mobile-nav-item: a(href="#team") PEOPLE
+        //li.mobile-nav-item PORTFOLIO
+        li.mobile-nav-item: a(href="#contact") CONTACT
     .jumbotron-cta
       h2 We like designing and building <br> things, especially for the web.
       h5 Big or small; simple or intricate; we've <br> got you covered.

@@ -38,8 +38,10 @@ section.jumbotron
         list-style: none
         margin: 0
         margin-right: 10px
-        .desktop-nav-item, li
+        .desktop-nav-item, li, a, a:visited
           display: inline
+          color: white
+          text-decoration: none
           padding: 0px 10px
           font-family: "Rubik", sans-serif
           font-size: 10pt
@@ -63,9 +65,10 @@ section.jumbotron
         font-size: 20pt
         text-align: center
         @include phone
+          margin: -20px auto 0 auto
           display: block
           line-height: 17pt
-          font-size: 12pt
+          font-size: 14pt
           text-align: center
       h5
         margin-top: 15px
@@ -92,7 +95,9 @@ section.jumbotron
             margin-right: 20px
             background: $gunmetal
             z-index: 10
-            .mobile-nav-item, li
+            .mobile-nav-item, li, a, a:visited
+              color: white
+              text-decoration: none
               padding: 5px 0px
               font-family: "Rubik", sans-serif
               color: white
